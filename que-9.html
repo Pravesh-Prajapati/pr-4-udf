@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function triangle(a ,b,c) {
+            sum = a+b+c;
+            if (sum == 180) {
+                console.log("triangle is valid " ,sum);
+            }
+            else{
+                console.log("triangle is not valid" ,sum);
+            }
+        }
+        let a = parseInt(prompt("enter side a"));
+        let b=  parseInt(prompt("enter side b"));
+        let c = parseInt(prompt("enter side c"));
+        triangle(a ,b,c);
+       
+    </script>
+</body>
+</html>

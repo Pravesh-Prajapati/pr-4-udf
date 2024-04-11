@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculate(operation, num1, num2) {
+            switch (operation) {
+                case "+":
+                    return num1 + num2;
+                case "-":
+                    return num1 - num2;
+                case "*":
+                    return num1 * num2;
+                case "/":
+                    return num1 / num2;
+                default:
+                    return "Invalid operation";
+            }
+        }
+        let num1 = prompt("Enter the first number:");
+        let num2 = prompt("Enter the second number:");
+        let operation = prompt("Enter the operation (+, -, *, /):");
+
+        let result = calculate(operation, num1, num2);
+        console.log(result);
+    </script>
+</body>
+
+</html>
